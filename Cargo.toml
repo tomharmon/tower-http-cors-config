@@ -1,11 +1,13 @@
 [package]
 name = "tower-http-cors-config"
 authors = ["Tom Harmon"]
-description = "Deserializable config structs for tower_http::cors"
+description = "Deserializable config types for tower_http::cors"
 version = "0.1.0"
 edition = "2021"
 keywords = ["tower", "tower_http", "cors"]
 license = "MIT"
+repository = "https://github.com/tomharmon/tower-http-cors-config"
+readme = true
 resolver = "2"
 
 [dependencies]
