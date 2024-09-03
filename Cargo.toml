@@ -2,7 +2,7 @@
 name = "tower-http-cors-config"
 authors = ["Tom Harmon"]
 description = "Deserializable config types for tower_http::cors"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 keywords = ["tower", "tower_http", "cors"]
 license = "MIT"
