@@ -78,7 +78,9 @@ impl From<Method> for http::Method {
 /// A wrapper around `RegexSet` that is serializable with serde
 #[derive(Debug, Clone)]
 #[cfg_attr(feature = "serde", derive(serde::Deserialize, serde::Serialize))]
-pub struct SerdeRegexSet(#[cfg_attr(feature = "serde", serde(with = "serde_regex_set"))] RegexSet);
+pub struct SerdeRegexSet(
+    #[cfg_attr(feature = "serde", serde(with = "serde_regex_set"))] pub RegexSet,
+);
 
 impl std::ops::Deref for SerdeRegexSet {
     type Target = RegexSet;
